@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <!-- ======================= HEADER ======================= -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h4 class="logo"><span style="color:orange;font-size:18px;">S</span>oham<span style="color:orange;font-size:22px;">.</span></h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills" onclick="OpenData('skills')">Skills</a></li>
+                    <li><a href="#education" onclick="OpenData('education')">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+   <!-- ================================ HOME ====================== -->
+
+   <div class="home_section" id="home">
+    <div class="home_icon">
+       <a href="https://www.linkedin.com/in/sohamnayak005/"> <i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/sohamnayak005"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/soham100nayak/"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+     <div class="home_text">
+        <h1>Hi I am <span style="color:orange;">S</span>oham Nayak</h1>
+        <p>Student of Computer Science and Engineering</p>
+         <a href="#about" ><button class="home_btn">Contact me<span><i class="fa-solid fa-caret-right"></i></span></button></a>
+    </div>
+    <div class="home_photo">
+        <img src="./images/Soham.png" alt="">
+    </div>
+   </div>
+
+   <!-- ================================ ABOUT ====================== -->
+
+   <div id="about">
+    <div class="about_container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Soham_about.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1>About <span style="color:cyan">Me</span></h1>
+                <div class="about_text">
+                    <p>I am Soham Nayak. I have Completed my Bechelor's Degree in Computer Science of Engineering from Bengal Institute of Technology. My areas of interest are : Web Development, Backend Development, Frontend Development, Full Stack Development</p>
+                </div>
+                
+
+                <div class="tab_titles">
+                    <p class="tab_links active_link" onclick="OpenData('skills')">Skills</p>
+                    <p class="tab_links" onclick="OpenData('experience')">Experience</p>
+                    <p class="tab_links"  onclick="OpenData('education')">Education</p>
+                </div>
+
+                <div class="tab_contents active_tab" id="skills">
+                    <ul>
+                        <li><span>Frontend</span><br>Designing User Interface</li>
+                        <li><span>Backend</span><br>Perform CURD Operation</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab_contents" id="experience">
+                    <ul>
+                        <li><span>Fresher</span><br>Searching for a job</li>
+                        <li><span>Java Development</span><br>Currently I am Studying Java Full Stack Web Development from JSpider and QSpider Kolkata</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab_contents" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br>Bachelor of Technology from Bengal Institute of Technology</li>
+                        <li><span>2018-2019</span><br>Higher Secondary Education  from Deopara Champamoni High School</li>
+                        <li><span>2016-2017</span><br> Secondary Education  from Balitha High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </div>
+
+   <!-- ================================ CONTACT US ====================== -->
+   <div class="con_div" id="contact">
+    <h1>CONTACT US</h1>
+    <div class="main_con">
+      <div class="details_div">
+        <form action="">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Phone Number">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Message" id="msg">
+        </form>
+        </div>
+    </div>
+    <div class="btn_send">
+   <button class="blue_btn home_btn">SEND</button>
+ </div>
+  </div>
+</div>
+
+ <!-- ================================ Footer ====================== -->
+
+ <div class="footer">
+    <div class="contact_details">
+        <h3><span >Call:&nbsp;</span>8910152658</h3>
+        <h3><span>Email:&nbsp;</span>sohamnayak005@gmail.com</h3>
+        <h3><span>Address:&nbsp;</span>Bankura,India</h3>
+    </div>
+    <div class="footer_icon">
+        <a href="https://www.linkedin.com/in/sohamnayak005/"> <i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/sohamnayak005"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/soham100nayak/"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills" onclick="OpenData('skills')">Skills</a></li>
+            <li><a href="#education" onclick="OpenData('education')">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+ </div>
+   <script src="script.js"></script>
+
+</body>
+</html>
+
